@@ -1,0 +1,292 @@
+* {
+    text-align: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-position: center;
+    background-color: black;
+    color: yellow;
+    
+}
+
+body h1 h3 p {
+    align-content: center;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 50%;
+    /* Full width */
+    height: 75%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    /* background-color: rgba(0,0,0); Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto;
+    /* 15% from the top and centered */
+
+    border: 1px solid yellow;
+    align-items: center;
+    width: 50%;
+    height: 75%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: rgb(255, 0, 0);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+button {
+    color: black;
+    background-color: yellow;
+    border-radius: 3em;
+    border-style: hidden;
+    cursor: pointer;
+    width: 20%;
+    height: 10%;
+    position: relative;
+    font-size: medium;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:hover {
+    color: yellow;
+    background-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: yellow;
+    font-style: oblique;
+}
+
+input {
+    width: 50%;
+    height: 7.5%;
+    padding: 10px 20px;
+    border-color: yellow;
+    background-color:transparent;
+    border-radius: 5em;
+}
+
+.conn-fail {
+    color: red;
+}
+
+.conn-good {
+    color: rgb(94, 235, 0);
+}
+
+.conn-fail,
+.conn-good {
+    font-style: oblique;
+}
+
+.navbar {
+    width: auto;
+    margin: 1px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar:hover {
+    cursor: pointer;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: rgba(251, 255, 0, 0.705);
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 1%;
+}
+
+.home-icon{
+    width: 50px;
+    height:35px;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-color: yellow;
+    border-collapse: collapse;
+}
+
+table, 
+th, 
+td{
+    border: 0.5px solid;
+    border-radius: 10em;
+    height: 30%;
+    width: 40%;
+}
+
+/*Form formatting*/
+
+.form-style-4 {
+    width: 450px;
+    font-size: 16px;
+    background: #495C70;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label {
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+    font-size: 16px;
+    color: #fff;
+}
+
+.form-style-4 label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-style-4 label>span {
+    display: inline-block;
+    /* float: left; */
+    width: 150px;
+}
+
+.form-style-4 input[type=text],
+.form-style-4 input[type=email] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+
+.form-style-4 textarea {
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize: none;
+    height: 20px;
+}
+
+.form-style-4 textarea:focus,
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus {
+    border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button] {
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+}
+
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover {
+    background: #394D61;
+}
+
+
+/* Close button on hover */
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
