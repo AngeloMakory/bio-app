@@ -47,7 +47,7 @@
             <div id="login" class="modal">
                 <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <!-- Modal Content -->
-                <form class="modal-content animate" action=" " name="login" onsubmit="return formValidate()">
+                <form class="modal-content-animate" action=" " name="login" onsubmit="return formValidate()">
 
                     <!-- <div class="imgcontainer">
                     <img src="img_avatar2.png" alt="Avatar" class="avatar">
@@ -68,10 +68,12 @@
                         <label>
                             <input type="checkbox" checked="checked" name="remember">Remember me
                         </label>
-                    </div>
+                        <br>
+                    <!-- </div>
 
-                    <div class="container">
+                    <div class="container"> -->
                         <button type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button>
+                        <br>
                         <span class="psw">Forgot <a href="#">password?</a></span>
                     </div>
 
@@ -105,9 +107,9 @@
 
                         <label>
                             <div class="gender-radios">
-                                <input type="checkbox" checked="checked" name="gender">Male    
-                                <input type="checkbox" checked="checked" name="gender">Female   
-                                <input type="checkbox" checked="checked" name="gender">Prefer not to say 
+                                <input type="checkbox" checked="checked" name="gender"> Male    
+                                <input type="checkbox" checked="checked" name="gender"> Female   
+                                <input type="checkbox" checked="checked" name="gender"> Prefer not to say 
                             </div>          
                         </label>
 
